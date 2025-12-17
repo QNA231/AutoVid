@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs", /* Quan trọng để chạy trên Node.js */
+    "lib": ["es2020"],
+    "strict": true,
+    "esModuleInterop": true, /* Dòng này FIX lỗi import express from 'express' */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
