@@ -74,12 +74,12 @@ function App() {
           
           {/* CỘT TRÁI: KỊCH BẢN & SETTING */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <div style={{ background: '#f8f8f8', padding: '20px', borderRadius: '12px', border: '1px solid #eee' }}>
+            <div style={{ background: '#1e1e1e', padding: '20px', borderRadius: '12px', border: '1px solid #eee' }}>
               <h3 style={{marginTop: 0}}>🎙️ Lời Dẫn (Sẽ đọc):</h3>
               <textarea 
                 value={data.script} 
                 onChange={(e) => setData({...data, script: e.target.value})}
-                style={{ width: '100%', height: '150px', padding: '10px', borderRadius: '8px', border: '1px solid #ccc', lineHeight: '1.5' }}
+                style={{ width: '100%', maxWidth: '92%', height: '150px', padding: '10px', borderRadius: '8px', border: '1px solid #ccc', lineHeight: '1.5' }}
               />
               <p style={{fontSize: '12px', color: '#666'}}>*Đây là nội dung sạch, không chứa mô tả cảnh "Scene:..."</p>
             </div>
